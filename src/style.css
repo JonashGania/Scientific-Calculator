@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button{
+    transition: all 0.3s ease-in;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.calcu-container{
+    transition: all 0.5s ease-in;
+}
+
+@media (min-width: 450px){
+    button{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
