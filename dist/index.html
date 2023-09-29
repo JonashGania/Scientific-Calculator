@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scientific Calculator</title>
     <link rel="stylesheet" href="tailwind.css">
 </head>
-<body>
-    
+<body class="flex justify-center items-center min-h-screen">
+    <div class="bg-slate-900 py-5 px-6 rounded-2xl shadow-container mx-4 w-mobile-w mobile:w-auto calcu-container">
+        <div class="bg-slate-800 mb-7 px-3 py-2 text-right rounded-md shadow-inner">
+            <div class="output text-gray-500 text-lg font-semibold">Ans = 0</div>
+            <input type="text" id="num-input" class="bg-transparent w-full text-right outline-none border-none text-2xl text-slate-300" disabled>
+        </div>
+        <div>
+            <div class="flex gap-3 pb-4">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Sin</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Cos</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Tan</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">(</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">)</button>
+            </div>
+            <div class="flex gap-3 pb-4">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">log</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x!</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#8730;</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">e<sup>x</sup></button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x<sup>y</sup></button>
+            </div>
+            <div class="flex gap-3 pb-4">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">7</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">8</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">9</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">DEL</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">AC</button>
+            </div>
+            <div class="flex gap-3 pb-4">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">4</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">5</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">6</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#215;</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#247;</button>
+            </div>
+            <div class="flex gap-3 pb-4">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">1</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">2</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">3</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">+</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">-</button>
+            </div>
+            <div class="flex gap-3">
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">0</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">&#960;</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">%</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">.</button>
+                <button class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">=</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
