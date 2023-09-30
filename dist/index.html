@@ -10,8 +10,9 @@
 <body class="flex justify-center items-center min-h-screen">
     <div class="bg-slate-900 py-5 px-6 rounded-2xl shadow-container mx-4 w-mobile-w mobile:w-auto calcu-container">
         <div class="bg-slate-800 mb-7 px-3 py-2 text-right rounded-md shadow-inner">
-            <div class="output text-gray-500 text-lg font-semibold">Ans = 0</div>
-            <input type="text" id="num-input" class="bg-transparent w-full text-right outline-none border-none text-2xl text-slate-300" disabled>
+            <div class="output-result text-gray-500 text-lg font-semibold">Ans = 0</div>
+            <!-- <div class="output-operation w-full text-right outline-none border-none text-3xl text-slate-300">0324234234345435353453453453453534534</div> -->
+            <input type="text" id="output-operation" class="bg-transparent w-full text-right outline-none border-none text-3xl text-slate-300" disabled>
         </div>
         <div>
             <div class="flex gap-3 pb-4 input">
@@ -21,11 +22,11 @@
                 <button id="open-parenthesis" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">(</button>
                 <button id="close-parenthesis" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">)</button>
             </div>
-            <div class="flex gap-3 pb-4 input">
+            <div class="flex gap-3 pb-8 input">
                 <button id="log" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">log</button>
                 <button id="factorial" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x!</button>
                 <button id="square-root" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#8730;</button>
-                <button id="exponentiation" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">e<sup>x</sup></button>
+                <button id="square" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x<sup>2</sup></button>
                 <button id="power" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x<sup>y</sup></button>
             </div>
             <div class="flex gap-3 pb-4 input">
@@ -54,7 +55,7 @@
                 <button id="pi" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">&#960;</button>
                 <button id="percent" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">%</button>
                 <button id="dot" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">.</button>
-                <button id="equal" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">=</button>
+                <button id="equal" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-teal-500 text-gray-200 rounded-md font-semibold shadow-button">=</button>
             </div>
         </div>
     </div>
