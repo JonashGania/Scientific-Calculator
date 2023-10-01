@@ -189,6 +189,7 @@ let calcuData = {
     formula: []
 }
 
+// Calculator button click function
 function calculator(button){
     if(button.type === 'operator'){
         calcuData.operation.push(' ' + button.symbol + ' ');
@@ -277,11 +278,14 @@ function calculator(button){
     return;
 }
 
+
+// Show the Output operation/formula
 function showOuputOperation(operation){
     const outputOperation = document.getElementById('output-operation')
     outputOperation.value = operation;
 }
 
+// Show the Output Result
 function showOutputResult(result){
     const outputResult = document.querySelector('.output-result');
     outputResult.innerHTML = `Ans = ${result}`;
@@ -309,7 +313,7 @@ function factorial(number){
     }
 }
 
-
+// Get the power base and move its index
 function getPowerBase(formula, powerSearchResult){
     let powerBases = [];
 
@@ -339,6 +343,8 @@ function getPowerBase(formula, powerSearchResult){
     return powerBases;
 }
 
+
+// Get the factorial number and move the number index
 function getFactorialNumber(formula, factorialSearchResult){
     let numbers = [];
     let factorialSequence = 0;
@@ -388,6 +394,7 @@ function getFactorialNumber(formula, factorialSearchResult){
     return numbers;
 }
 
+// Search for POWER/FACTORIAL in the array
 function search(array, key){
     let searchResult = [];
     
