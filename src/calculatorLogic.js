@@ -251,7 +251,6 @@ function calculator(button){
             let toReplace = base + POWER;
             let replacement = "Math.pow(" + base + ",";
             formula_str = formula_str.replace(toReplace, replacement);
-            console.log(formula_str);
         })
 
         const factorialNum = getFactorialNumber(calcuData.formula, factorialSearchResult);
