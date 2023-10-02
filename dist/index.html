@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Calculator</title>
     <link rel="stylesheet" href="tailwind.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <script src="bundle.js" defer></script>
 </head>
 <body class="flex justify-center items-center min-h-screen">
@@ -15,42 +19,42 @@
             <input type="text" id="output-operation" class="bg-transparent w-full text-right font-semibold outline-none border-none text-3xl text-slate-300" disabled>
         </div>
         <div>
-            <div class="flex gap-3 pb-4 input">
+            <div class="flex justify-between gap-3 pb-4 input ">
                 <button id="sin" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Sin</button>
                 <button id="cos" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Cos</button>
                 <button id="tan" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">Tan</button>
                 <button id="open-parenthesis" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">(</button>
                 <button id="close-parenthesis" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">)</button>
             </div>
-            <div class="flex gap-3 pb-8 input">
+            <div class="flex justify-between gap-3 pb-8 input">
                 <button id="log" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">log</button>
                 <button id="factorial" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x!</button>
                 <button id="square-root" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#8730;</button>
                 <button id="square" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x<sup>2</sup></button>
                 <button id="power" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">x<sup>y</sup></button>
             </div>
-            <div class="flex gap-3 pb-4 input">
+            <div class="flex justify-between gap-3 pb-4 input">
                 <button id="seven" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">7</button>
                 <button id="eight" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">8</button>
                 <button id="nine" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">9</button>
                 <button id="delete" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">DEL</button>
                 <button id="all-clear" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">AC</button>
             </div>
-            <div class="flex gap-3 pb-4 input">
+            <div class="flex justify-between gap-3 pb-4 input">
                 <button id="four" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">4</button>
                 <button id="five" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">5</button>
                 <button id="six" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">6</button>
                 <button id="multiplication" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#215;</button>
                 <button id="division" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">&#247;</button>
             </div>
-            <div class="flex gap-3 pb-4 input">
+            <div class="flex justify-between gap-3 pb-4 input">
                 <button id="one" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">1</button>
                 <button id="two" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">2</button>
                 <button id="three" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">3</button>
                 <button id="addition" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">+</button>
                 <button id="subtraction" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button text-2xl">-</button>
             </div>
-            <div class="flex gap-3 input">
+            <div class="flex justify-between gap-3 input">
                 <button id="zero" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">0</button>
                 <button id="pi" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">&#960;</button>
                 <button id="percent" class="w-10 h-8 mobile:w-16 mobile:h-12 bg-slate-300 rounded-md font-semibold shadow-button">%</button>
