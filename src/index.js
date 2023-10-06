@@ -1,6 +1,5 @@
 import calculator from "./calculatorLogic";
 import { calcuButtons } from "./calculatorLogic";
-import calculate from "./calculatorCli";
 
 // Buttons click event
 function onButtonClick(){
@@ -60,4 +59,3 @@ function handleKeyboardInput(event) {
 
 document.addEventListener('keydown', handleKeyboardInput);
 onButtonClick();
-calculate();
