@@ -261,6 +261,7 @@ function calculator(button){
         let result;
         try{
             result = eval(formula_str);
+            console.log(calcuData.formula)
             calcuData.operation = [];
             calcuData.formula = [];
             showOutputResult(result);
@@ -300,7 +301,6 @@ function trigo(callback, angle){
 function factorial(number){
     let answer = 1;
 
-    if(number % 1 != 0) return gamma(number + 1);
     if(number === 0 || number === 1){
         return answer
     } else {
@@ -404,26 +404,6 @@ function search(array, key){
     })
 
     return searchResult;
-}
-
-
-// Gamma Function
-function gamma(n) {  
-    
-    var g = 7,
-        p = [0.99999999999980993, 676.5203681218851, -1259.1392167224028, 771.32342877765313, -176.61502916214059, 12.507343278686905, -0.13857109526572012, 9.9843695780195716e-6, 1.5056327351493116e-7];
-    if(n < 0.5) {
-      return Math.PI / Math.sin(n * Math.PI) / gamma(1 - n);
-    }
-    else {
-      n--;
-      var x = p[0];
-      for(var i = 1; i < g + 2; i++) {
-        x += p[i] / (n + i);
-      }
-      var t = n + g + 0.5;
-      return Math.sqrt(2 * Math.PI) * Math.pow(t, (n + 0.5)) * Math.exp(-t) * x;
-    }
 }
 
 
