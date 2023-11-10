@@ -225,7 +225,7 @@ export default function Calculator() {
                     disabled
                     className='text-gray-500 font-semibold bg-transparent w-full text-right text-2xl'
                 />
-                <div className='output-result font-semibold outline-none border-none text-3xl text-slate-300'>{outputResult}</div>
+                <div className='output-result font-semibold outline-none border-none text-3xl text-slate-300 overflow-hidden'>{outputResult}</div>
             </div>
             <div className='flex flex-wrap max-w-[390px] gap-4'>
                 {calcuButtons.map((button, index) => (
